@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste formularios</title>
+    <form action="cadastrar.php" method="get">
+        <p>
+            <label for="in1">Número: </label><input type="number" min="0" max="50" required id="in1" name="n1" oninput="iresultado.innerHTML = Number(in1.value)+Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número: </label><input type="number" min="0" max="50" required id="in2" name="n2" oninput="iresultado.innerHTML = Number(in1.value)+Number(in2.value)">
+        </p>
+        <p>
+            <label for="iresultado">Total: </label><output id="iresultado">0</output>
+        </p>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
